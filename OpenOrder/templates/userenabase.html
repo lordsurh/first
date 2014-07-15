@@ -1,0 +1,48 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+      <script src="{% static 'order/js/jquery.min.js'%}"></script>
+  <script src="{% static 'order/js/bootstrap.min.js'%}"></script>
+  <link rel="stylesheet" type="text/css" href="{% static 'order/css/bootstrap.min.css'%}">
+       <link rel="stylesheet/less" href="{% static 'style.less'%}">
+    <script src="{% static 'less.js'%}"></script>
+</head>
+<body data-offset="40">
+<div class="container">
+<header class="header">
+<div class="row">
+	<h1 class="span6"><a href="/" title="GheekLife"><img src="{% static 'order/img/7.png'%}" alt="GheekLife"/></a></h1>
+	<div class="span6"><div class="pull-right"><br/> <a class="pull-right" href="mailto:lordsurh@gmail.com"><small> Email: lordsurh@gmail.com</small></a><strong><small> <br/>Call (24/7) :  ***********</small></strong></div></div>
+</div>
+</header>
+    <div class="navbar">
+  <div class="navbar-inner">
+	<div class="container">
+	  <div class="nav-collapse">
+		<ul class="nav">
+            <li class=""><a href="{% url 'userena_signin'  %}">Home</a></li>
+			<li class=""><a href="{% url 'polls:index' %}">Poll Application</a></li>
+
+		</ul>
+		<ul class="nav pull-right">
+		<li class="dropdown">
+		  <a data-toggle="dropdown" class="dropdown-toggle" href="#"><img src="{% static 'order/img/en.png'%}" alt="English British"/> English<b class="caret"></b></a>
+		  <ul class="dropdown-menu">
+			  <li><a href="#"><img src="{% static 'order/img/en.png'%}" alt="English British"/> English </a></li>
+			  <li><a href="#"><img src="{% static 'order/img/fr.png'%}" alt="French"/> French</a></li>
+			  <li><a href="#"><img src="{% static 'order/img/es.png'%}" alt="Spanish"/> Spanish</a></li>
+			  <li><a href="#"><img src="{% static 'order/img/de.png'%}" alt="German"/> Germal</a></li>
+		  </ul>
+		  </li>
+		</ul>
+          </div>
+	  </div><!-- /.nav-collapse -->
+	</div>
+ </div><!-- /navbar-inner -->	<div class = "content">
+	{% block content %}
+	{% endblock %}
+	</div>
+	</body>
+
+	</html>

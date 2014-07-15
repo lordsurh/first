@@ -1,0 +1,169 @@
+{% load i18n %}
+{% load staticfiles %}
+{% load url from future %}
+<html>
+<head>
+      <script src="{% static 'order/js/jquery.min.js'%}"></script>
+  <script src="{% static 'order/js/bootstrap.min.js'%}"></script>
+  <link rel="stylesheet" type="text/css" href="{% static 'order/css/bootstrap.min.css'%}">
+       <link rel="stylesheet/less" href="{% static 'style.less'%}">
+    <script src="{% static 'less.js'%}"></script>
+</head>
+<body data-offset="40">
+<div class="container">
+<header class="header">
+<div class="row">
+	<h1 class="span6"><a href="/" title="GheekLife"><img src="{% static 'order/img/7.png'%}" alt="GheekLife"/></a></h1>
+	<div class="span6"><div class="pull-right"><br/> <a class="pull-right" href="mailto:lordsurh@gmail.com"><small> Email: lordsurh@gmail.com</small></a><strong><small> <br/>Call (24/7) :  ***********</small></strong></div></div>
+</div>
+</header>
+    <div class="navbar">
+  <div class="navbar-inner">
+	<div class="container">
+	  <div class="nav-collapse">
+		<ul class="nav">
+                  {% if user.is_authenticated%}
+                            <li class="active"><a href="{% url 'userena_signin'  %}">Home</a></li>
+			<li class=""><a href="{% url 'start' %}">Ribbit1</a></li>
+			<li class=""><a href="{% url 'users' %}">Ribbit2</a></li>
+			<li class=""><a href="{% url 'polls:index' %}">Poll Application</a></li>
+            <li class=""><a href="{% url 'blogango_index' %}">Blog Application</a></li>
+			<li class=""><a href="{% url 'userena_profile_detail' user.username %}">View Profile</a></li>
+            <li class="dropdown">
+				<a data-toggle="dropdown" class="dropdown-toggle" href="#">Edit Profile<b class="caret"></b></a>
+				<ul class="dropdown-menu">
+					<li class="nav-header">Profile actions</li>
+					<li><a href="{% url 'userena_profile_edit' user.username %}">Edit Details</a></li>
+					<li><a href="{% url 'userena_password_change' user.username %}">Change Password</a></li>
+					<li><a href="{% url 'userena_email_change' user.username %}">Change Email</a></li>
+					<li class="divider"></li>
+					<li><a href="{% url 'userena_signout'  %}">Signout</a></li>
+				</ul>
+			</li>
+            <li class=""><a href="{% url 'contact:contact' %}">Contact Us</a></li>
+                            {% else %}
+                         <li class=""><a href="{% url 'userena_signin'  %}">Home</a></li>
+                        <li class=""><a href="{% url 'contact:contact' %}">Contact Us</a></li>
+                        {% endif %}
+		</ul>
+
+		<ul class="nav pull-right">
+		<li class="dropdown">
+		  <a data-toggle="dropdown" class="dropdown-toggle" href="#"><img src="{% static 'order/img/en.png'%}" alt="English British"/> English<b class="caret"></b></a>
+		  <ul class="dropdown-menu">
+			  <li><a href="#"><img src="{% static 'order/img/en.png'%}" alt="English British"/> English </a></li>
+			  <li><a href="#"><img src="{% static 'order/img/fr.png'%}" alt="French"/> French</a></li>
+			  <li><a href="#"><img src="{% static 'order/img/es.png'%}" alt="Spanish"/> Spanish</a></li>
+			  <li><a href="#"><img src="{% static 'order/img/de.png'%}" alt="German"/> Germal</a></li>
+		  </ul>
+		  </li>
+		</ul>
+          </div>
+	  </div><!-- /.nav-collapse -->
+	</div>
+ </div><!-- /navbar-inner -->
+     <div id="myCarousel" class="carousel slide homCar">
+		<div class="carousel-inner" style="border-top:18px solid #222; border-bottom:1px solid #222; border-radius:4px;">
+		  <div class="item active">
+			<img src="{% static 'order/img/banner.jpg'%}" alt="#" style="min-height:250px; min-width:100%"/>
+			<div class="carousel-caption">
+				  <h4>We work for you </h4>
+				  <p>
+				  No matter how big and how small your business is. We are giving the best solution for your best value of money.
+				  </p>
+			</div>
+		  </div>
+		  <div class="item">
+			<img src="{% static 'order/img/banner1.jpg'%}" alt="#" style="min-height:250px; min-width:100%"/>
+			<div class="carousel-caption">
+				  <h4>We work for you </h4>
+				  <p>
+				  No matter how big and how small your business is. We are giving the best solution for your best value of money.
+				  </p>
+			</div>
+		  </div>
+		  <div class="item">
+			<img src="{% static 'order/img/banner2.jpg'%}" alt="#" style="min-height:250px; min-width:100%"/>
+			<div class="carousel-caption">
+				  <h4>We work for you </h4>
+				  <p>
+				  No matter how big and how small your business is. We are giving the best solution for your best value of money.
+				  </p>
+			</div>
+		  </div>
+		</div>
+	<a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+	<a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+</div>
+
+        <div class="row">
+	<div class="span5">
+    <form action="" method="post" class="form-signin">
+    {% csrf_token %}
+     <fieldset>
+    <legend>{% trans "Signn" %}</legend>
+    {{ form.non_field_errors }}
+    <div class="fieldWrapper">
+        {% if form.identification.errors %}
+       <div class="alert alert-danger">
+        <strong>Incorrect Field!</strong>
+      </div>
+    {% endif %}
+        <label for="identification" >Email-Address:</label>
+         <input type="email" name = "identification" class="form-control" placeholder="Email address" required autofocus>
+
+    </div>
+    <div class="fieldWrapper">
+        {% if form.password.errors %}
+       <div class="alert alert-danger">
+        <strong>Incorrect Field!</strong>
+      </div>
+    {% endif %}
+        <label for="password">Password:</label>
+        <input type="password" name = "password" class="form-control" placeholder="Password" required>
+    </div>
+    <div class="fieldWrapper">
+        {{ form.remember_me.errors }}
+        <label for="remember_me" class="checkbox"><input type="checkbox" value="remember-me"> Remember me</label>
+
+    </div>
+  <button class="btn btn-lg btn-primary btn-block" type="submit">Sign In </button>
+     <p class="forgot-password"><a href="{% url 'userena_password_reset' %}" title="{% trans 'Forgot your password?' %}">{% trans "Forgot your password?" %}</a></p>
+  {% if next %}<input type="hidden" name="next" value="{{ next }}" />{% endif %}
+</fieldset>
+    </form>
+	</div>
+	</div>
+<div class="swd-content-layout-wrapper layout-item-3">
+<div class="swd-content-layout">
+    <div class="swd-content-layout-row">
+    <div class="swd-layout-cell layout-item-4" style="width: 25%" >
+        <h1>Headlines</h1>
+        <p><span style="font-style:italic;">Lorem ipsum dolor sit amet.</span></p>
+        <p style="text-align: center;"><img width="154" height="154" alt="" src="{% static 'order/img/Newspapers-1-icon-2.png'%}" class=""><br></p>
+        <p>Fusce tempus lorem ac diam gravida sed egestas erat rhoncus. Praesent in arcu id libero sollicitudin vulputate.&nbsp;</p>
+
+    </div><div class="swd-layout-cell layout-item-4" style="width: 25%" >
+        <h1>Gaming</h1>
+        <p><span style="font-style:italic;">Sed dapibus consectetur.</span></p>
+        <p style="text-align: center;"><img width="154" height="154" alt="" src="{% static 'order/img/Games-Playstation-3-icon-2.png'%}" class=""><br></p>
+        <p>Praesent in arcu id libero sollicitudin vulputate. Proin mollis tincidunt fringilla. In et tortor mi, eget sagittis libero.</p>
+
+    </div><div class="swd-layout-cell layout-item-4" style="width: 25%" >
+        <h1>Computers</h1>
+        <p><span style="font-style:italic;">Dolor sit amet adipiscing elit.&nbsp;</span></p>
+        <p style="text-align: center;"><img width="154" height="154" alt="" src="{% static 'order/img/Backup-Seagate-icon-2.png'%}" class=""><br></p>
+        <p>Proin mollis tincidunt fringilla. In et tortor mi, eget sagittis libero. Fusce tempus lorem ac diam gravida sed.</p>
+
+    </div><div class="swd-layout-cell layout-item-5" style="width: 25%" >
+        <h1>Mobile</h1>;
+        <p><span style="font-style:italic;">Sed dapibus consectetur.</span></p>
+        <p style="text-align: center;"><img width="154" height="154" alt="" src="{% static 'order/img/Phone-HTC-Dash-icon-2.png'%}" class=""><br></p>
+        <p>In et tortor mi, eget sagittis libero. Praesent in arcu id libero sollicitudin vulputate. Proin mollis tincidunt fringilla.</p>
+        </div>
+    </div>
+    </div>
+</div>
+</div>
+</body>
+</html>

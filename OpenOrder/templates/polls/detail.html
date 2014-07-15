@@ -1,0 +1,51 @@
+{% extends "polls/base_generic.html" %}
+{% block content %}
+     <div class="container">
+<div class="row">
+<div class="span6">
+<ul class="breadcrumb">
+  <li>
+    <a href="{% url 'polls:index'%}">All Polls</a> <span class="divider">></span>
+  </li>
+  <li class="active">Vote Box</li>
+     <li><span class="divider">></span>
+    <a href="{% url 'polls:results' poll.id %}">Results</a>
+  </li>
+
+</ul>
+</div>
+</div>
+</div>
+<div class="row">
+
+	{% if poll %}
+		<div class="page-header">
+        {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+        <h2 class="">{{poll.question}}</h2>
+       <H5> SECTION = {{ poll.poll__section }}</H5>
+        </div>
+    	<form action="{% url 'polls:vote' poll.id %}" method="post">
+		{% csrf_token %}
+        <div class="form-group">
+  		{% for choice in poll.choice_set.all %}
+ 
+    		<div class="radio" >
+  			<label >
+    		<input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{choice.id}}">
+			 {{ choice.text }}
+       		</label>
+			</div> 
+		{% endfor %}
+        </div>
+        
+    	<div class="form-group " style="margin-top:10px">
+      	<button type="submit" class="btn btn-default">Submit</button>
+    
+ 		</div>
+		</form>
+		</div>
+ 	{% else %}
+   			 <p>No info about this poll</p>
+	{% endif %}
+</div>
+{% endblock %}

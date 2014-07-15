@@ -1,0 +1,32 @@
+{% extends "gheez/base.html" %}
+ {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+{% block content %}
+    <div class="panel right">
+        <h1>Create a Ribbit</h1>
+        <p>
+            <form action="{% url 'submit' %}" method="post">
+            {% for field in gheez_form %}{% csrf_token %}
+            {{ field }}
+            {% endfor %}
+            <input type="hidden" value="{{ next_url }}" name="next_url">
+            <input type="submit" value="Gheez It!">
+            </form>
+        </p>
+    </div>
+    <div class="panel left">
+        <h1>Public Profiles</h1>
+        {% for user, gheez_arranged in obj %}
+        <div class="ribbitWrapper">
+            <a href="{% url 'profile_view' user.username %}"> @{{ user.username }}
+                <img class="avatar" src="{{ user.profile.gravatar_url }}">
+                <span class="name">{{ user.first_name }}</span>
+            </a>
+                {{ user.gheez_count}} Ribbits
+                <span class="spacing">{{ user.profile.followed_by.count }} Followers</span>
+                <span class="spacing">{{ user.profile.follows.count }} Following</span>
+            </p>
+            <p>{{ gheez_arranged.content }}</p>
+        </div>
+        {% endfor %}
+    </div>
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends "polls/base_generic.html" %}
+{% load i18n %}
+{% block content %}
+    {% if error_message %}<strong> HI , {{ user }} {{ error_message }}</strong>
+             {% else %}
+              HI , {{ user }}
+             {% endif %}
+
+
+<div class="row">
+		{% if latest_poll_list %}
+    			<div class="page-header"> <h2> Latest Polls </h2></div>
+
+    		<ul>
+
+    			{% for poll in latest_poll_list %}
+        		<li><a href="/polls/{{ poll.id }}/"> {{ poll.question }} </a></li>
+    			{% endfor %}
+   			 </ul>
+		{% else %}
+   			 <p>No polls are available.</p>
+		{% endif %}
+ </div>
+    </div>
+{%endblock%}
