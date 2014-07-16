@@ -21,6 +21,7 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
     url(r'^blog/', include('blogango.urls' ) ,name= 'blog'),
     url(r'^accounts/', include('userena.urls')),
+    url(r'^message/', include('django_messages.urls')),
     url(r'^polls/', include('Order.urls' , namespace="polls")),
     url(r'^contact/', include('contact_form.urls' , namespace="contact")),
 )+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

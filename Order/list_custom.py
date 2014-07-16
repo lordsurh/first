@@ -4,7 +4,7 @@ from django.shortcuts import get_object_or_404
 from django.forms.models import modelformset_factory
 from django.core.urlresolvers import reverse
 
-from list import *
+from Order.list import *
 from edit_custom import *
 
 

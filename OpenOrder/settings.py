@@ -73,6 +73,7 @@ INSTALLED_APPS = (
     'easy_thumbnails',
     'google_analytics',
     'contact_form',
+    'django_messages',
     )
 
 LOGIN_REDIRECT_URL = '/accounts/%(username)s/'
