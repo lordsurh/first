@@ -26,8 +26,7 @@
 
                         {% if user.is_authenticated%}
                             <li class=""><a href="{% url 'userena_signin'  %}">Home</a></li>
-			<li class=""><a href="{% url 'start' %}">Ribbit1</a></li>
-			<li class=""><a href="{% url 'users' %}">Ribbit2</a></li>
+
 			<li class=""><a href="{% url 'polls:index' %}">Poll Application</a></li>
             <li class=""><a href="{% url 'blogango_index' %}">Blog Application</a></li>
 			<li class=""><a href="{% url 'userena_profile_detail' user.username %}">View Profile</a></li>
@@ -42,16 +41,17 @@
 					<li><a href="{% url 'userena_signout'  %}">Signout</a></li>
 				</ul>
 			</li>
-            <li class="active"><a href="{% url 'contact:contact' %}">Contact Us</a></li>
+
                             {% else %}
                          <li class=""><a href="{% url 'userena_signin'  %}">Home</a></li>
-                        <li class="active"><a href="{% url 'contact:contact' %}">Contact Us</a></li>
+
                         {% endif %}
                     </ul>
 
+
                     <ul class="nav pull-right">
                         <li class="dropdown">
-                            <a data-toggle="dropdown" class="dropdown-toggle" href="#"><img src="{% static 'order/img/en.png'%}" alt="English British"/> English<b class="caret"></b></a>
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#"><img src="{% static 'order/img/en.png'%}" alt="English British"/> English<b class="caret"></b></a>
                             <ul class="dropdown-menu">
                                 <li><a href="#"><img src="{% static 'order/img/en.png'%}" alt="English British"/> English </a></li>
                                 <li><a href="#"><img src="{% static 'order/img/fr.png'%}" alt="French"/> French</a></li>
@@ -60,6 +60,9 @@
                             </ul>
                         </li>
                     </ul>
+                <ul class="nav pull-right">
+                        <li> <a href="{% url 'contact:contact' %}">Contact Us</a></li>
+                        </ul>
                 </div>
             </div><!-- /.nav-collapse -->
         </div>
