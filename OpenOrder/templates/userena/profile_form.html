@@ -12,7 +12,6 @@
   {% csrf_token %}
     <legend>{% trans "Edit Profile" %}</legend>
     {{ form.as_p }}
-    {{ user.username }}
-  <button class="btn btn-lg btn-primary btn-block" type="submit">Save Changes </button>
+<input type="submit" value="Save Changes" />
 </form>
 {% endblock %}
