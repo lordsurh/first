@@ -1,7 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="094f49dd-c004-4dd0-8cdb-2c6be94c56db" name="Default" comment="" />
+    <list default="true" id="094f49dd-c004-4dd0-8cdb-2c6be94c56db" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OpenOrder/templates/contact/contact.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/contact/controllers.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/contact/forms.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/contact/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/contact/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OpenOrder/templates/contact/thankyou.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/contact/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/contact/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/contact/wsgi.py" />
+      <change type="DELETED" beforePath="C:\Users\HP\PycharmProjects\OpenOrder\OpenOrder\templates\contact_form\contact.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\HP\PycharmProjects\OpenOrder\OpenOrder\templates\contact_form\contact_completed.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\HP\PycharmProjects\OpenOrder\OpenOrder\templates\contact_form\email_subject.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\HP\PycharmProjects\OpenOrder\OpenOrder\templates\contact_form\email_template.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\HP\PycharmProjects\OpenOrder\contact_form\__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\HP\PycharmProjects\OpenOrder\contact_form\forms.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\HP\PycharmProjects\OpenOrder\contact_form\locale\es_ES\LC_MESSAGES\django.mo" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\HP\PycharmProjects\OpenOrder\contact_form\locale\es_ES\LC_MESSAGES\django.po" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\HP\PycharmProjects\OpenOrder\contact_form\locale\pt_BR\LC_MESSAGES\django.mo" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\HP\PycharmProjects\OpenOrder\contact_form\locale\pt_BR\LC_MESSAGES\django.po" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\HP\PycharmProjects\OpenOrder\contact_form\locale\ru\LC_MESSAGES\django.mo" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\HP\PycharmProjects\OpenOrder\contact_form\locale\ru\LC_MESSAGES\django.po" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\HP\PycharmProjects\OpenOrder\contact_form\tests.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\HP\PycharmProjects\OpenOrder\contact_form\urls.py" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\HP\PycharmProjects\OpenOrder\contact_form\views.py" afterPath="" />
+      <change type="MOVED" beforePath="C:\Users\HP\PycharmProjects\OpenOrder\contact_form\models.py" afterPath="$PROJECT_DIR$/contact/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OpenOrder/settings.py" afterPath="$PROJECT_DIR$/OpenOrder/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OpenOrder/static/order/css/signin.css" afterPath="$PROJECT_DIR$/OpenOrder/static/order/css/signin.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OpenOrder/templates/userena/signin_form.html" afterPath="$PROJECT_DIR$/OpenOrder/templates/userena/signin_form.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OpenOrder/templates/userena/signup_form.html" afterPath="$PROJECT_DIR$/OpenOrder/templates/userena/signup_form.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OpenOrder/urls.py" afterPath="$PROJECT_DIR$/OpenOrder/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="OpenOrder.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,79 +64,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="compose.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/OpenOrder/templates/django_messages/compose.html">
+      <file leaf-file-name="profile_form.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OpenOrder/templates/userena/profile_form.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="17" selection-start="590" selection-end="590" vertical-scroll-proportion="-13.730769" vertical-offset="34" max-vertical-offset="646">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="inbox.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/OpenOrder/templates/django_messages/inbox.html">
+      <file leaf-file-name="signup_form.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OpenOrder/templates/userena/signup_form.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="32" selection-start="632" selection-end="632" vertical-scroll-proportion="-15.038462" vertical-offset="0" max-vertical-offset="918">
-              <folding>
-                <marker date="1405530806659" expanded="true" signature="135:598" placeholder="..." />
-                <marker date="1405530806659" expanded="true" signature="153:591" placeholder="..." />
-                <marker date="1405530806659" expanded="true" signature="173:584" placeholder="..." />
-                <marker date="1405530806659" expanded="true" signature="197:577" placeholder="..." />
-                <marker date="1405530806659" expanded="true" signature="208:315" placeholder="..." />
-                <marker date="1405530806659" expanded="true" signature="337:380" placeholder="..." />
-                <marker date="1405530806659" expanded="true" signature="482:571" placeholder="..." />
-                <marker date="1405530806659" expanded="true" signature="679:1442" placeholder="..." />
-                <marker date="1405530806659" expanded="true" signature="691:841" placeholder="..." />
-                <marker date="1405530806659" expanded="true" signature="853:1433" placeholder="..." />
-                <marker date="1405530806659" expanded="true" signature="897:1407" placeholder="..." />
-                <marker date="1405530806659" expanded="true" signature="948:1241" placeholder="..." />
-                <marker date="1405530806659" expanded="true" signature="989:1225" placeholder="..." />
-                <marker date="1405530806659" expanded="true" signature="1041:1172" placeholder="..." />
-              </folding>
+            <state line="31" column="38" selection-start="843" selection-end="843" vertical-scroll-proportion="0.0" vertical-offset="527" max-vertical-offset="697">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="outbox.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/OpenOrder/templates/django_messages/outbox.html">
+      <file leaf-file-name="contact.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OpenOrder/templates/contact/contact.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="40" selection-start="642" selection-end="642" vertical-scroll-proportion="-15.038462" vertical-offset="0" max-vertical-offset="867">
-              <folding>
-                <marker date="1405530815219" expanded="true" signature="136:600" placeholder="..." />
-                <marker date="1405530815219" expanded="true" signature="154:593" placeholder="..." />
-                <marker date="1405530815219" expanded="true" signature="174:586" placeholder="..." />
-                <marker date="1405530815219" expanded="true" signature="198:579" placeholder="..." />
-                <marker date="1405530815219" expanded="true" signature="209:316" placeholder="..." />
-                <marker date="1405530815219" expanded="true" signature="323:407" placeholder="..." />
-                <marker date="1405530815219" expanded="true" signature="484:573" placeholder="..." />
-                <marker date="1405530815219" expanded="true" signature="689:1284" placeholder="..." />
-                <marker date="1405530815219" expanded="true" signature="702:851" placeholder="..." />
-                <marker date="1405530815219" expanded="true" signature="863:1275" placeholder="..." />
-                <marker date="1405530815219" expanded="true" signature="907:1249" placeholder="..." />
-                <marker date="1405530815219" expanded="true" signature="961:1050" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="trash.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/OpenOrder/templates/django_messages/trash.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="43" selection-start="645" selection-end="645" vertical-scroll-proportion="-15.038462" vertical-offset="0" max-vertical-offset="901">
-              <folding>
-                <marker date="1405530823626" expanded="true" signature="134:600" placeholder="..." />
-                <marker date="1405530823626" expanded="true" signature="152:593" placeholder="..." />
-                <marker date="1405530823626" expanded="true" signature="172:586" placeholder="..." />
-                <marker date="1405530823626" expanded="true" signature="196:579" placeholder="..." />
-                <marker date="1405530823626" expanded="true" signature="208:315" placeholder="..." />
-                <marker date="1405530823626" expanded="true" signature="322:406" placeholder="..." />
-                <marker date="1405530823626" expanded="true" signature="524:573" placeholder="..." />
-                <marker date="1405530823626" expanded="true" signature="692:1207" placeholder="..." />
-                <marker date="1405530823626" expanded="true" signature="704:850" placeholder="..." />
-                <marker date="1405530823626" expanded="true" signature="862:1198" placeholder="..." />
-                <marker date="1405530823626" expanded="true" signature="906:1172" placeholder="..." />
-                <marker date="1405530823626" expanded="true" signature="957:1002" placeholder="..." />
-              </folding>
+            <state line="31" column="0" selection-start="712" selection-end="750" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="816">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -112,57 +94,64 @@
       <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/OpenOrder/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="122" column="23" selection-start="3134" selection-end="3134" vertical-scroll-proportion="0.0" vertical-offset="1000" max-vertical-offset="3196">
+            <state line="103" column="14" selection-start="2768" selection-end="2768" vertical-scroll-proportion="0.0" vertical-offset="1469" max-vertical-offset="3689">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/contact_form/views.py">
+      <file leaf-file-name="admin.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://C:/Python27/Lib/site-packages/django_messages/admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
+            <state line="9" column="45" selection-start="311" selection-end="311" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="1972">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="entry_footer.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OpenOrder/templates/entry_footer.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OpenOrder/templates/blogango/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="163" column="52" selection-start="6417" selection-end="6417" vertical-scroll-proportion="0.0" vertical-offset="1610" max-vertical-offset="3417">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="blogroll.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OpenOrder/templates/blogango/blogroll.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/blogango/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="49" column="0" selection-start="2285" selection-end="2285" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1462">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/blogango/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="131" column="1" selection-start="5320" selection-end="5320" vertical-scroll-proportion="-7.9893994" vertical-offset="6749" max-vertical-offset="7361">
               <folding>
-                <element signature="e#0#44#0" expanded="true" />
+                <element signature="e#0#76#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/contact_form/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tests.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/contact_form/tests.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3281">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="forms.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/contact_form/forms.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="1028" max-vertical-offset="1394">
-              <folding>
-                <element signature="e#0#24#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="message.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/OpenOrder/static/order/css/message.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="13" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="799">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -190,22 +179,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/OpenOrder/templates/base.html" />
-        <option value="C:/Python27/Lib/site-packages/blogango/templates/blogango/base.html" />
-        <option value="$PROJECT_DIR$/OpenOrder/templates/userena/signin_form.html" />
-        <option value="$PROJECT_DIR$/Order/list_custom.py" />
-        <option value="C:/Python27/Lib/site-packages/blogango/views.py" />
-        <option value="$PROJECT_DIR$/OpenOrder/templates/polls/results.html" />
-        <option value="$PROJECT_DIR$/OpenOrder/urls.py" />
-        <option value="$PROJECT_DIR$/OpenOrder/settings.py" />
-        <option value="$PROJECT_DIR$/OpenOrder/static/css/signin.css" />
-        <option value="$PROJECT_DIR$/OpenOrder/static/order/css/signin.css" />
-        <option value="$PROJECT_DIR$/OpenOrder/templates/django_messages/base.html" />
-        <option value="$PROJECT_DIR$/OpenOrder/static/order/css/message.css" />
-        <option value="$PROJECT_DIR$/OpenOrder/templates/django_messages/compose.html" />
-        <option value="$PROJECT_DIR$/OpenOrder/templates/django_messages/inbox.html" />
         <option value="$PROJECT_DIR$/OpenOrder/templates/django_messages/outbox.html" />
         <option value="$PROJECT_DIR$/OpenOrder/templates/django_messages/trash.html" />
+        <option value="$PROJECT_DIR$/OpenOrder/urls.py" />
+        <option value="$PROJECT_DIR$/contact/controllers.py" />
+        <option value="$PROJECT_DIR$/contact/urls.py" />
+        <option value="$PROJECT_DIR$/contact/views.py" />
+        <option value="$PROJECT_DIR$/OpenOrder/templates/contact/contact.html" />
+        <option value="$PROJECT_DIR$/OpenOrder/templates/userena/signin_form.html" />
+        <option value="$PROJECT_DIR$/OpenOrder/static/order/css/signin.css" />
+        <option value="$PROJECT_DIR$/OpenOrder/templates/userena/signup_form.html" />
+        <option value="$PROJECT_DIR$/messages/admin.py" />
+        <option value="C:/Python27/Lib/site-packages/django_messages/admin.py" />
+        <option value="$PROJECT_DIR$/OpenOrder/templates/blogango/base.html" />
+        <option value="$PROJECT_DIR$/blogango/urls.py" />
+        <option value="$PROJECT_DIR$/OpenOrder/settings.py" />
+        <option value="$PROJECT_DIR$/blogango/views.py" />
       </list>
     </option>
   </component>
@@ -270,7 +259,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="OpenOrder" />
+              <option name="myItemId" value="blogango" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -285,32 +274,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="OpenOrder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OpenOrder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OpenOrder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OpenOrder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="django_messages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -321,14 +284,14 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PythonSdkConfigurable" />
     <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PythonSdkConfigurable" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -337,18 +300,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\HP\PycharmProjects\OpenOrder" />
+      <recent name="C:\Users\HP\PycharmProjects\OpenOrder\OpenOrder\templates" />
       <recent name="C:\Users\HP\PycharmProjects\OpenOrder\OpenOrder\static\css" />
       <recent name="C:\Users\HP\PycharmProjects\OpenOrder\Order" />
-      <recent name="C:\Users\HP\PycharmProjects\OpenOrder\OpenOrder\templates" />
-      <recent name="C:\Users\HP\PycharmProjects\OpenOrder" />
       <recent name="C:\Users\HP\PycharmProjects\OpenOrder\OpenOrder\static\order\css" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\HP\PycharmProjects\OpenOrder\OpenOrder\static\order\css" />
-      <recent name="C:\Users\HP\PycharmProjects\OpenOrder\OpenOrder\templates\django_messages" />
       <recent name="C:\Users\HP\PycharmProjects\OpenOrder\OpenOrder\templates" />
+      <recent name="C:\Python27\Lib\site-packages" />
       <recent name="C:\Users\HP\PycharmProjects\OpenOrder" />
       <recent name="C:\Users\HP\PycharmProjects\OpenOrder\OpenOrder" />
+      <recent name="C:\Users\HP\PycharmProjects\OpenOrder\OpenOrder\static\order\css" />
     </key>
   </component>
   <component name="RunManager" selected="Django server.OpenOrder">
@@ -436,7 +399,27 @@
       <option name="PARAMETERS" value="" />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="OpenOrder" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
@@ -462,27 +445,7 @@
       <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="OpenOrder" />
-      <option name="launchJavascriptDebuger" value="false" />
-      <option name="port" value="8000" />
-      <option name="host" value="" />
-      <option name="additionalOptions" value="" />
-      <option name="browserUrl" value="" />
-      <option name="runTestServer" value="false" />
-      <option name="runNoReload" value="false" />
-      <option name="useCustomRunCommand" value="false" />
-      <option name="customRunCommand" value="" />
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -620,22 +583,22 @@
     <frame x="-9" y="-9" width="1378" height="780" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284553" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32520324" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284553" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32846153" sideWeight="0.6699834" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31126332" sideWeight="0.6780488" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32724506" sideWeight="0.67747164" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31126332" sideWeight="0.6780488" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3219512" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3219512" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.321875" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284553" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284553" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -657,9 +620,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31126332" sideWeight="0.6780488" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3219512" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -682,175 +645,105 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/OpenOrder/static/css/signin.css">
+    <entry file="file://$PROJECT_DIR$/OpenOrder/templates/userena/loginbasefile.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="30" selection-start="234" selection-end="234" vertical-scroll-proportion="-0.4180328" vertical-offset="357" max-vertical-offset="765">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1156" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OpenOrder/templates/base.html">
+    <entry file="file://$PROJECT_DIR$/OpenOrder/templates/userenabase.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="10" selection-start="3585" selection-end="3585" vertical-scroll-proportion="-44.46154" vertical-offset="0" max-vertical-offset="1530">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="901" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/OpenOrder/static/order/css/signin.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="4" selection-start="20" selection-end="335" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="935">
+        <state line="7" column="0" selection-start="245" selection-end="245" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="918" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OpenOrder/templates/userena/signin_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="29" selection-start="884" selection-end="3099" vertical-scroll-proportion="0.0" vertical-offset="1088" max-vertical-offset="2975" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OpenOrder/templates/userena/profile_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OpenOrder/templates/polls/detail.html">
+    <entry file="file://$PROJECT_DIR$/OpenOrder/templates/contact/contact.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="6" selection-start="65" selection-end="418" vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="952">
-          <folding>
-            <marker date="1401990037779" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1401990037779" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1401990037779" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1401990037779" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1401990037779" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1401990037779" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1401990037779" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1401990037779" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1401990037779" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1401990037779" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1401990037779" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1401990037779" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1401990037779" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1401990037779" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OpenOrder/templates/django_messages/new_message.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="564">
+        <state line="31" column="0" selection-start="712" selection-end="750" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="816">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OpenOrder/templates/django_messages/base.html">
+    <entry file="file://$PROJECT_DIR$/blogango/conf/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="0" selection-start="3590" selection-end="3590" vertical-scroll-proportion="-22.884615" vertical-offset="0" max-vertical-offset="1360">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="365" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OpenOrder/templates/userena/signup_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="38" selection-start="843" selection-end="843" vertical-scroll-proportion="0.0" vertical-offset="527" max-vertical-offset="697">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OpenOrder/static/order/css/message.css">
+    <entry file="file://C:/Python27/Lib/site-packages/django_messages/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="13" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="799">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="367" />
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/django_messages/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="45" selection-start="311" selection-end="311" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1972">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OpenOrder/templates/django_messages/compose.html">
+    <entry file="file://$PROJECT_DIR$/OpenOrder/templates/entry_footer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="17" selection-start="590" selection-end="590" vertical-scroll-proportion="-13.730769" vertical-offset="34" max-vertical-offset="646">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="367">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OpenOrder/templates/django_messages/inbox.html">
+    <entry file="file://$PROJECT_DIR$/OpenOrder/templates/blogango/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="32" selection-start="632" selection-end="632" vertical-scroll-proportion="-15.038462" vertical-offset="0" max-vertical-offset="918">
-          <folding>
-            <marker date="1405530806659" expanded="true" signature="135:598" placeholder="..." />
-            <marker date="1405530806659" expanded="true" signature="153:591" placeholder="..." />
-            <marker date="1405530806659" expanded="true" signature="173:584" placeholder="..." />
-            <marker date="1405530806659" expanded="true" signature="197:577" placeholder="..." />
-            <marker date="1405530806659" expanded="true" signature="208:315" placeholder="..." />
-            <marker date="1405530806659" expanded="true" signature="337:380" placeholder="..." />
-            <marker date="1405530806659" expanded="true" signature="482:571" placeholder="..." />
-            <marker date="1405530806659" expanded="true" signature="679:1442" placeholder="..." />
-            <marker date="1405530806659" expanded="true" signature="691:841" placeholder="..." />
-            <marker date="1405530806659" expanded="true" signature="853:1433" placeholder="..." />
-            <marker date="1405530806659" expanded="true" signature="897:1407" placeholder="..." />
-            <marker date="1405530806659" expanded="true" signature="948:1241" placeholder="..." />
-            <marker date="1405530806659" expanded="true" signature="989:1225" placeholder="..." />
-            <marker date="1405530806659" expanded="true" signature="1041:1172" placeholder="..." />
-          </folding>
+        <state line="163" column="52" selection-start="6417" selection-end="6417" vertical-scroll-proportion="0.0" vertical-offset="1610" max-vertical-offset="3417">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OpenOrder/templates/django_messages/outbox.html">
+    <entry file="file://$PROJECT_DIR$/OpenOrder/templates/blogango/blogroll.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="40" selection-start="642" selection-end="642" vertical-scroll-proportion="-15.038462" vertical-offset="0" max-vertical-offset="867">
-          <folding>
-            <marker date="1405530815219" expanded="true" signature="136:600" placeholder="..." />
-            <marker date="1405530815219" expanded="true" signature="154:593" placeholder="..." />
-            <marker date="1405530815219" expanded="true" signature="174:586" placeholder="..." />
-            <marker date="1405530815219" expanded="true" signature="198:579" placeholder="..." />
-            <marker date="1405530815219" expanded="true" signature="209:316" placeholder="..." />
-            <marker date="1405530815219" expanded="true" signature="323:407" placeholder="..." />
-            <marker date="1405530815219" expanded="true" signature="484:573" placeholder="..." />
-            <marker date="1405530815219" expanded="true" signature="689:1284" placeholder="..." />
-            <marker date="1405530815219" expanded="true" signature="702:851" placeholder="..." />
-            <marker date="1405530815219" expanded="true" signature="863:1275" placeholder="..." />
-            <marker date="1405530815219" expanded="true" signature="907:1249" placeholder="..." />
-            <marker date="1405530815219" expanded="true" signature="961:1050" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OpenOrder/templates/django_messages/trash.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="43" selection-start="645" selection-end="645" vertical-scroll-proportion="-15.038462" vertical-offset="0" max-vertical-offset="901">
-          <folding>
-            <marker date="1405530823626" expanded="true" signature="134:600" placeholder="..." />
-            <marker date="1405530823626" expanded="true" signature="152:593" placeholder="..." />
-            <marker date="1405530823626" expanded="true" signature="172:586" placeholder="..." />
-            <marker date="1405530823626" expanded="true" signature="196:579" placeholder="..." />
-            <marker date="1405530823626" expanded="true" signature="208:315" placeholder="..." />
-            <marker date="1405530823626" expanded="true" signature="322:406" placeholder="..." />
-            <marker date="1405530823626" expanded="true" signature="524:573" placeholder="..." />
-            <marker date="1405530823626" expanded="true" signature="692:1207" placeholder="..." />
-            <marker date="1405530823626" expanded="true" signature="704:850" placeholder="..." />
-            <marker date="1405530823626" expanded="true" signature="862:1198" placeholder="..." />
-            <marker date="1405530823626" expanded="true" signature="906:1172" placeholder="..." />
-            <marker date="1405530823626" expanded="true" signature="957:1002" placeholder="..." />
-          </folding>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/OpenOrder/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="122" column="23" selection-start="3134" selection-end="3134" vertical-scroll-proportion="0.0" vertical-offset="1000" max-vertical-offset="3196">
+        <state line="103" column="14" selection-start="2768" selection-end="2768" vertical-scroll-proportion="0.0" vertical-offset="1469" max-vertical-offset="3689">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/contact_form/forms.py">
+    <entry file="file://$PROJECT_DIR$/blogango/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1394">
+        <state line="49" column="0" selection-start="2285" selection-end="2285" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1462">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blogango/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="131" column="1" selection-start="5320" selection-end="5320" vertical-scroll-proportion="-7.9893994" vertical-offset="6749" max-vertical-offset="7361">
           <folding>
-            <element signature="e#0#24#0" expanded="true" />
+            <element signature="e#0#76#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contact_form/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contact_form/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="366">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contact_form/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3281">
-          <folding />
         </state>
       </provider>
     </entry>

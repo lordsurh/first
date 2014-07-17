@@ -10,6 +10,35 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
+
+HAYSTACK_CONNECTIONS = {
+    'default': {
+        # For Solr:
+        'ENGINE': 'haystack.backends.solr_backend.SolrEngine',
+        'URL': 'http://localhost:9001/solr/example',
+        'TIMEOUT': 60 * 5,
+        'INCLUDE_SPELLING': True,
+    },
+    'whoosh': {
+        # For Whoosh:
+        'ENGINE': 'haystack.backends.whoosh_backend.WhooshEngine',
+        'PATH': os.path.join(os.path.dirname(__file__), 'whoosh_index'),
+        'INCLUDE_SPELLING': True,
+    },
+    'simple': {
+        # For Simple:
+        'ENGINE': 'haystack.backends.simple_backend.SimpleEngine',
+    },
+    'xapian': {
+        # For Xapian (requires the third-party install):
+        'ENGINE': 'xapian_backend.XapianEngine',
+        'PATH': os.path.join(os.path.dirname(__file__), 'xapian_index'),
+    }
+}
+
+
+RECIPIENTS = ['smally_tweety@yahoo.com']
+
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 PROJECT_PATH = os.path.realpath(os.path.dirname(__file__))
@@ -72,7 +101,7 @@ INSTALLED_APPS = (
     'django_xmlrpc',
     'easy_thumbnails',
     'google_analytics',
-    'contact_form',
+    'contact',
     'django_messages',
     )
 
